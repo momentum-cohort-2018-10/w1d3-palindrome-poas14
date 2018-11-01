@@ -17,8 +17,8 @@ def is_palindrome(test):
     elif len(test) == 0:
         return True
     elif len(test) > 1:
-        is_palindrome(test[0:-1])
-        return True
+        return is_palindrome(test[1:-1])
+        
 
 if is_palindrome(user_input) == True:
     print('is a palindrome')
